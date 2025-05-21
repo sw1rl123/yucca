@@ -1,0 +1,28 @@
+.faq__text {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.faq__checkbox {
+    display: none;
+}
+
+.faq__label svg {
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.faq__label:has(.faq__checkbox:checked) svg {
+    transform: rotate(90deg);
+}
+
+.faq__open-text {
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.3s;
+}
+
+.faq__label:has(.faq__checkbox:checked) + .faq__open-text {
+    height: auto;
+}

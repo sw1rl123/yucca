@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+  --col-bg-main: #ffffff;
+  --col-bg-main-bright: #dac3ff;
+  --col-bg-darker: #f5f5f5;
+  --col-bg-grey: #e0e0e0;
+
+  --col-slider-border: #7f56d9;
+
+  --col-text-main: #ffffff;
+  --col-text-main-dark: #000000;
+  --col-text-grey: #707070;
+
+  --col-button-hover: #e8ffc3;
+  --col-link-hover: #cbf884;
+
+  --ff-montser: Montserrat;
+  --ff-bebas: Bebas Neue;
+}
+
+html, body, #root {
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    top: 0;
+}
+
+.wrapper {
+  padding: 0 20px;
+  padding-top: 32px;
+  max-width: 1650px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: var(--ff-montser);
+  height: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
+@media (max-width: 1650px) {
+  .wrapper {
+    max-width: 1200px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 1000px) {
+  .wrapper {
+    padding-top: 0;
+    width: 100%;
   }
 }

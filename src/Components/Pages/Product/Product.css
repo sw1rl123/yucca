@@ -1,0 +1,282 @@
+.product__wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.card__img {
+    width: 815px;
+    height: 990px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.card_column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__heading {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 18px;
+    padding-left: 20%;
+}
+
+.card__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 37px;
+    margin-bottom: 21px;
+    padding-left: 20%;
+}
+
+.card__price--old {
+    text-decoration: line-through;
+    font-size: 32px;
+    color: var(--col-text-grey);
+    display: block;
+}
+
+.card__price--new {
+    font-size: 36px;
+    font-weight: 600;
+    background: var(--col-button-hover);
+    border-radius: 50px;
+    padding: 10px 55px;
+    display: block;
+}
+
+.card__warranty {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 30%;
+    font-size: 20px;
+}
+
+.card__warranty__icon {
+    margin-right: 10px;
+}
+
+.card__parameters {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card__parameters__heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 10px;
+    text-wrap: nowrap;
+    min-width: 120px;
+}
+
+.card__list {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card__list1 {
+    flex-direction: column;
+}
+
+.card__list2 {
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.card__item {
+    background: var(--col-bg-grey);
+    border-radius: 50px;
+    padding: 5px 20px;
+    text-align: center;
+    display: block;
+}
+
+
+.card__list3 .card__item {
+    width: 120px;
+}
+
+.card__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.card__description__heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card__description__text {
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.card_column button {
+    width: 250px;
+    margin-left: 35%;
+}
+
+@media (max-width: 1650px) {
+    .card__img {
+        width: 600px;
+        height: 900px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card__img {
+        width: 350px;
+        height: 450px;
+    }
+
+    .card__heading {
+        font-size: 24px;
+    }
+
+    .card__price {
+        
+        width: 400px;
+    }
+
+    .card__price--old {
+        font-size: 20px;
+    }
+
+    .card__price--new {
+        font-size: 24px;
+    }
+
+    .card__warranty {
+        font-size: 16px;
+    }
+
+    .card__parameters__heading  {
+        font-size: 18px;
+    }
+
+    .card__list {
+        font-size: 16px;
+    }
+
+    .card__description {
+        margin-left: -50%;
+        width: 100%;
+    }
+
+    .card__description__text {
+        max-width: 800px;
+        width: 800px;
+        font-size: 28px;
+    }
+
+    .card_column button {
+        margin-left: -5%;
+    }
+
+    .card_column {
+        width: 600px;
+    }
+
+    .product__wrapper {
+        max-width: 950px;
+    }
+}
+
+@media (max-width: 950px) {
+    .card__img {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .product__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_column {
+        align-items: center;
+        width: 100%;
+    }
+
+    .card__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .card__heading {
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .card__price {
+        padding: 0;
+        width: 200px;
+        margin-left: -10%;
+    }
+
+    .card__warranty {
+        font-size: 16px;
+        margin-left: -30%;
+    }
+    .card__list {
+        font-size: 16px;
+    }
+
+    .card__description {
+        margin-left: -10%;
+        width: 100%;
+    }
+
+    .card__description__text {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .card__parameters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .card__parameters__heading  {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .card_column {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card__item {
+        width: 400px;
+    }
+}

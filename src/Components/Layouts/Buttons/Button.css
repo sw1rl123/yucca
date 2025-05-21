@@ -1,0 +1,21 @@
+.button {
+    background: var(--col-bg-main-bright);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button--insted {
+    background: var(--col-button-hover);
+}
+
+.button:hover {
+    background: var(--col-button-hover);
+}
+
+.button--insted:hover {
+    background: var(--col-bg-main-bright);
+}

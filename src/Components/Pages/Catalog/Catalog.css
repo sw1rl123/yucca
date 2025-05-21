@@ -1,0 +1,35 @@
+.catalog__wrapper {
+    padding-top: 185px;
+}
+
+.catalog__navbar {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 34px;
+    align-items: center;
+    padding: 0; 
+    margin-bottom: 75px;
+}
+
+.catalog__navbar__icon {
+    position: absolute;
+    left: 200px;
+    cursor: pointer;
+}
+
+@media (max-width: 1650px) {
+    .catalog__navbar__icon {
+        left: 20px;
+    }
+
+    .catalog__navbar {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .catalog__wrapper {
+        padding-top: 150px;
+    }
+}

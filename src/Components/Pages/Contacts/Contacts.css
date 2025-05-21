@@ -1,0 +1,140 @@
+.contacts__wrapper {
+    padding-top: 160px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts__wrapper > div {
+    margin-bottom: 40px;
+}
+
+.contacts__heading {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.contacts__span {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--col-text-grey);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contacts__text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.contacts__text:hover {
+    text-decoration: underline;
+}
+
+.contacts__button {
+    margin-top: 200px;
+    background: var(--col-button-hover);
+    padding: 5px 30px;
+    font-size: 26px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 390px;
+    margin-left: calc(50% - 195px);
+    margin-bottom: 40px;
+}
+
+
+.contacts__button:hover {
+    background: var(--col-bg-main-bright);
+}
+
+.contacts__from-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__form {
+    position: absolute;
+    max-width: 1130px;
+    width: 100%;
+    height: auto;
+    background: white;
+    margin-top: 200px;
+    padding: 35px 60px;
+    border-radius: 25px;
+}
+
+.contacts__icon {
+    position: absolute;
+    right: 60px;
+    cursor: pointer;
+}
+
+.contacts__form__heading {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+
+.contacts__label {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contacts__input {
+    width: 100%;
+    margin-left: -10px;
+    border-radius: 10px;
+    padding: 14px 20px;
+    border: 2px solid black;
+    margin-bottom: 35px;
+}
+
+.contacts__inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.contacts__teaxtarea {
+    resize: none;
+    width: 100%;
+    border: 2px solid black;
+    margin-left: -10px;
+    border-radius: 10px;
+    padding: 14px 20px;
+    height: 160px;
+    margin-bottom: 40px;
+}
+
+.contacts__button--form {
+    background: var(--col-button-hover);
+    padding: 5px 30px;
+    font-size: 26px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 390px;
+    margin-left: calc(50% - 195px);
+    margin-bottom: 40px;
+}
+
+.contacts__button--form:hover {
+    background: var(--col-bg-main-bright);
+}

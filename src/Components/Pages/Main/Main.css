@@ -1,0 +1,144 @@
+.hero {
+    width: 100%;
+    border-radius: 50px;
+    height: 826px;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.hero__wrapper {
+    overflow-y: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    width: 100%;
+    border-radius: 50px;
+    top: 0;
+    height: 100%;
+}
+
+.hero__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.wrapper-decoration {
+    display: block;
+    position: absolute;
+    background: var(--col-bg-main);
+    z-index: 0;
+}
+
+#dec-left-bottom {
+    width: 600px;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 50px;
+}
+
+#dec-left-bottom::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    top: -50px;
+    left: 0px;
+    border-bottom-left-radius: 80px;
+    box-shadow: -10px 10px 0px 10px var(--col-bg-main);
+}
+
+#dec-left-bottom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    bottom: 0px;
+    right: -50px;
+    border-bottom-left-radius: 80px;
+    box-shadow: -10px 10px 0px 10px var(--col-bg-main);
+}
+
+#dec-right-top {
+    width: 256px;
+    height: 90px;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 50px;
+}
+
+#dec-right-top::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    top: 0px;
+    left: -25px;
+    border-top-right-radius: 80px;
+    box-shadow: 10px -10px 0px 10px var(--col-bg-main);
+}
+
+#dec-right-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    bottom: -25px;
+    right: 0px;
+    border-top-right-radius: 80px;
+    box-shadow: 10px -10px 0px 10px var(--col-bg-main);
+}
+
+.offers {
+    margin: 0 auto;
+}
+
+.offers__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 36px;
+}
+
+@media (max-width: 1650px) {
+    .hero {
+        height: 600px;
+    }
+
+    #dec-left-bottom {
+        width: 300px;
+        height: 180px;
+    }
+
+    #dec-right-top {
+        width: 200px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero__wrapper {
+        display: none;
+    }
+
+    .hero {
+        height: 550px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        height: 350px;
+    }
+}
