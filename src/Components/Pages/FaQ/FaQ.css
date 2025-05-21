@@ -21,6 +21,8 @@
     height: 0;
     overflow-y: hidden;
     transition: 0.3s;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .faq__label:has(.faq__checkbox:checked) + .faq__open-text {
