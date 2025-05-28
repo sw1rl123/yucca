@@ -104,7 +104,7 @@ function Showcase({products, BuyButton, title, useLinkOnItem, link, flexWrap, un
                     {useLinkOnItem && <Arrow45 className='product__icon'></Arrow45>}
                     <img src={product.src} alt="" className="product__image" />
                     <h3 className="product__heading">{product.heading}</h3>
-                    {BuyButton && <Button linkTo={linkTo} link={true} text={"Купить"} fz={"1"} padding={"25"}></Button>}
+                    {BuyButton && <Button onLink={product.linkOn} linkTo={linkTo} link={true} text={"Купить"} fz={"1"} padding={"25"}></Button>}
                     {product.price && <p className="product__price">От <span className="product__price--cross-out">{oldPrice ? product.oldPrice : ''}</span> { product.price + "р."}</p>}
                 </li>
             )}

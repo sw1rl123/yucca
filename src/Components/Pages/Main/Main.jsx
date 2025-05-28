@@ -61,7 +61,7 @@ function Main() {
                 <Link to="/catalog?category=compositions"><Button text={"Композиции"} fz={"2"} padding={"65"}></Button></Link>
             </div>
             }
-            <Showcase link="/catalog?category=bouquet" linkTo={"bouquet"} underLine={true} products={cutProducts} BuyButton={true} title={"Букеты"} useLinkOnItem={false}></Showcase>
+            <Showcase link="/catalog?category=bouquet" linkTo={"bouquets"} underLine={true} products={cutProducts} BuyButton={true} title={"Букеты"} useLinkOnItem={false}></Showcase>
             <Showcase link="/catalog?category=compositions" underLine={true} products={products2} BuyButton={false} title={"Композиции"} useLinkOnItem={true}></Showcase>
         </section>
         <Footer></Footer>

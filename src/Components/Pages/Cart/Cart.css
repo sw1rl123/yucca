@@ -235,10 +235,34 @@
     border-radius: 50px;
     cursor: pointer;
     transition: background 0.3s;
+    margin-bottom: 30px;
 }
 
 .cart__link--ordered:hover {
     background: var(--col-bg-main-bright);
+}
+
+.cart__text-ordered {
+    font-size: 23px;
+    max-width: 430px;
+    text-align: center;
+}
+
+.cart__add-button {
+     background: var(--col-bg-main-bright);
+     display: inline-flex;
+     width: 40px;
+     height: 40px;
+     align-items: center;
+     justify-content: center;
+     line-height: 0;
+     border-radius: 100%;
+     margin: 0 10px;
+     cursor: pointer;
+}
+
+.cart__add-button:hover {
+    background: var(--col-button-hover);
 }
 
 @media (max-width: 1650px) {
@@ -265,6 +289,11 @@
 @media (max-width: 1000px) {
     .cart__coupon {
         font-size: 18px;
+    }
+
+    .cart__add-button {
+        width: 30px;
+        height: 30px;
     }
 }
 

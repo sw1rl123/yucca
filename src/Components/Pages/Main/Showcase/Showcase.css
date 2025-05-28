@@ -219,7 +219,11 @@
 
 @media (max-width: 1650px) {
     .catalog__wrapper .product__heading {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .offers .product__heading {
+        font-size: 24px;
     }
 
     .product__image {
@@ -271,6 +275,10 @@
     }
 
     .showcase__heading {
+        font-size: 24px;
+    }
+
+    .showcase__list--column .product__heading {
         font-size: 24px;
     }
 }

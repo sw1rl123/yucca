@@ -13,8 +13,8 @@ import Warranty from './Components/Pages/Warranty/Warranty';
 function App() {
   
   useEffect(() => {
-    localStorage.setItem("cartCountBouquet", 0)
-    localStorage.setItem("cartCountComposition", 0)
+    localStorage.setItem("cartProducts", '')
+    localStorage.setItem("cartCount", '')
   }, []);
 
   return (

@@ -24,33 +24,33 @@ import { useLocation, useNavigate, useParams, useSearchParams } from 'react-rout
 function Catalog() {
 
     const products1 = [
-        { id: 1, src: Roses, heading: "Розы", price: "2290", oldPrice: "1299"},
-        { id: 2, src: Roses1, heading: "Розовый букет", price: "899", oldPrice: "1299"},
-        { id: 3, src: Roses2, heading: "Сиреневые розы", price: "599", oldPrice: "1299"},
-        { id: 4, src: Roses4, heading: "Желтые розы", price: "799", oldPrice: "1299"},
-        { id: 5, src: Roses3, heading: "Розы гуд муд", price: "499", oldPrice: "1299"},
-        { id: 6, src: Roses5, heading: "Яркий микс", price: "899", oldPrice: "1299"}
+        { id: 1, src: Roses, heading: "Розы", price: "2290", oldPrice: "1299", linkOn: "roses"},
+        { id: 2, src: Roses1, heading: "Розовый букет", price: "899", oldPrice: "1299", linkOn: "roses2"},
+        { id: 3, src: Roses2, heading: "Сиреневые розы", price: "599", oldPrice: "1299", linkOn: "roses3"},
+        { id: 4, src: Roses4, heading: "Желтые розы", price: "799", oldPrice: "1299", linkOn: "roses4"},
+        { id: 5, src: Roses3, heading: "Розы гуд муд", price: "499", oldPrice: "1299", linkOn: "roses5"},
+        { id: 6, src: Roses5, heading: "Яркий микс", price: "899", oldPrice: "1299", linkOn: "roses6"}
     ];
 
     const products2 = [
-        { id: 1, src: Roses6, heading: "Розы Саммер", price: "999", oldPrice: "1299"},
-        { id: 2, src: Roses7, heading: "Розы Love", price: "899", oldPrice: "1299"},
-        { id: 3, src: Roses8, heading: "Ангел Бомбастик", price: "599", oldPrice: "1299"},
-        { id: 4, src: Roses9, heading: "Розы Павлова", price: "799", oldPrice: "1299"},
-        { id: 5, src: Roses10, heading: "Розы кахала", price: "499", oldPrice: "1299"},
-        { id: 6, src: Roses11, heading: "Нежные пионовидные", price: "899", oldPrice: "1299"}
+        { id: 1, src: Roses6, heading: "Розы Саммер", price: "999", oldPrice: "1299", linkOn: "roses7"},
+        { id: 2, src: Roses7, heading: "Розы Love", price: "899", oldPrice: "1299", linkOn: "roses8"},
+        { id: 3, src: Roses8, heading: "Ангел Бомбастик", price: "599", oldPrice: "1299", linkOn: "roses9"},
+        { id: 4, src: Roses9, heading: "Розы Павлова", price: "799", oldPrice: "1299", linkOn: "roses10"},
+        { id: 5, src: Roses10, heading: "Розы кахала", price: "499", oldPrice: "1299", linkOn: "roses11"},
+        { id: 6, src: Roses11, heading: "Нежные пионовидные", price: "899", oldPrice: "1299", linkOn: "roses12"}
     ];
 
     const products3 = [
-        { id: 1, src: Flowers1, heading: "Искусственные", price: "3199"},
-        { id: 2, src: Roses2, heading: "Сиреневые розы", price: "899"},
-        { id: 3, src: Roses3, heading: "Розы гуд муд", price: "499"},
+        { id: 1, src: Flowers1, heading: "Искусственные", price: "3199", linkOn: "composition1"},
+        { id: 2, src: Roses2, heading: "Сиреневые розы", price: "899", linkOn: "composition2"},
+        { id: 3, src: Roses3, heading: "Розы гуд муд", price: "499", linkOn: "composition3"},
     ];
 
     const products4 = [
-        { id: 1, src: Roses7, heading: "Розы Love", price: "899"},
-        { id: 2, src: Roses9, heading: "Розы Павлова", price: "799"},
-        { id: 3, src: Roses11, heading: "Нежные пионовидные", price: "899"}
+        { id: 1, src: Roses7, heading: "Розы Love", price: "899", linkOn: "roses8"},
+        { id: 2, src: Roses9, heading: "Розы Павлова", price: "799", linkOn: "roses10"},
+        { id: 3, src: Roses11, heading: "Нежные пионовидные", price: "899", linkOn: "roses12"}
     ];
 
     var underLines = [true, true, true];
