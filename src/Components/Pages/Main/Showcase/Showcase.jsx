@@ -102,7 +102,7 @@ function Showcase({products, BuyButton, title, useLinkOnItem, link, flexWrap, un
             {products.map(product => 
                 <li onClick={(e) => toCompositions()} key={product.id} className="showcase__item product" style={{width: itemWidth + "%"}}>
                     {useLinkOnItem && <Arrow45 className='product__icon'></Arrow45>}
-                    <img src={product.src} alt="" className="product__image" />
+                    <div className="product__image"><div className="prdocut__gradient"></div><img src={product.src} alt="" /></div>
                     <h3 className="product__heading">{product.heading}</h3>
                     {BuyButton && <Button onLink={product.linkOn} linkTo={linkTo} link={true} text={"Купить"} fz={"1"} padding={"25"}></Button>}
                     {product.price && <p className="product__price">От <span className="product__price--cross-out">{oldPrice ? product.oldPrice : ''}</span> { product.price + "р."}</p>}
