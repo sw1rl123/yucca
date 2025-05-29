@@ -345,31 +345,31 @@ function Product() {
                         <div className="card__parameters">
                             <h4 className="card__parameters__heading">Упаковка</h4>
                             <ul className="card__list card__list1">
-                                <li className="card__item" width="400px">Без упаковки</li>
-                                <li className="card__item" width="400px">Крафт бумага + 190р.</li>
-                                <li className="card__item" width="400px">Цветная матовая пленка + 190р.</li>
+                                <li className="card__item" width="400px"><label><input type="radio" name="box"/>Без упаковки</label></li>
+                                <li className="card__item" width="400px"><label><input type="radio" name="box"/>Крафт бумага + 190р.</label></li>
+                                <li className="card__item" width="400px"><label><input type="radio" name="box"/>Цветная матовая пленка + 190р.</label></li>
                             </ul>
                         </div>
                         <div className="card__parameters">
                             <h4 className="card__parameters__heading">Кол-во</h4>
                             <ul className="card__list card__list2">
-                                <li className="card__item">Поштучно</li>
-                                <li className="card__item">3</li>
-                                <li className="card__item">7</li>
-                                <li className="card__item">11</li>
-                                <li className="card__item">17</li>
-                                <li className="card__item">25</li>
-                                <li className="card__item">31</li>
-                                <li className="card__item">51</li>
-                                <li className="card__item">101</li>
+                                <li className="card__item"><label><input type="radio" name="count"/>Поштучно</label></li>
+                                <li className="card__item"><label><input type="radio" name="count"/>3</label></li>
+                                <li className="card__item"><label><input type="radio" name="count"/>7</label></li>
+                                <li className="card__item"><label><input type="radio" name="count"/>11</label></li>
+                                <li className="card__item"><label><input type="radio" name="count"/>17</label></li>
+                                <li className="card__item"><label><input type="radio" name="count"/>25</label></li>
+                                <li className="card__item"><label><input type="radio" name="count"/>31</label></li>
+                                <li className="card__item"><label><input type="radio" name="count"/>51</label></li>
+                                <li className="card__item"><label><input type="radio" name="count"/>101</label></li>
                             </ul>
                         </div>
                         <div className="card__parameters">
                             <h4 className="card__parameters__heading">Высота</h4>
                             <ul className="card__list card__list3">
-                                <li className="card__item">50 см</li>
-                                <li className="card__item">60 см</li>
-                                <li className="card__item">70 см</li>
+                                <li className="card__item"><label><input type="radio" name="height"/>50 см</label></li>
+                                <li className="card__item"><label><input type="radio" name="height"/>60 см</label></li>
+                                <li className="card__item"><label><input type="radio" name="height"/>70 см</label></li>
                             </ul>
                         </div>
                     </div>

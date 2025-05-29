@@ -169,6 +169,20 @@
     background: var(--col-button-hover);
 }
 
+.card__item {
+    cursor: pointer;
+    border: 1px solid var(--col-bg-grey);
+}
+
+.card__item input {
+    display: none;
+}
+
+.card__item:has(input:checked) {
+    background: var(--col-bg-main-bright);
+    border: 1px solid black;
+}
+
 @media (max-width: 1650px) {
     .card__img {
         width: 600px;
@@ -335,11 +349,19 @@
         max-width: 300px;
     }
 
+    .card__list2 .card__item {
+        width: 120px;
+    }
+
     .card__item {
         width: 300px;
     }
 
     .card__list3 {
         max-width: 300px;
+    }
+
+    .card__list3 .card__item {
+        width: 90px;
     }
 }
